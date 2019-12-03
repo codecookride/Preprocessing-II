@@ -8,6 +8,9 @@
 
     @media @mobile {
       flex-wrap: column;
+      align-content: center;
+      justify-content: center;
+      margin: 30px auto;
     }
 
    
@@ -17,7 +20,8 @@
       padding-right: 1%;
       
       @media @mobile {
-        width:100%;
+        width:90%;
+        padding: 5px;
       }
     }
 
@@ -26,7 +30,8 @@
       padding-left: 1%;
       
       @media @mobile {
-        width:100%;
+        width:90%;
+        padding: 5px;
       }
 
       img {
@@ -51,13 +56,9 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 80%;
     margin: 0 auto 30px;
-    
-    @media @mobile {
-      width:100%;
-    }
-
+  
     img {
       border-radius: 10px;
     }
@@ -69,17 +70,20 @@
     display: flex;
     flex-flow:row wrap;
     justify-content: space-between;
+
     @media @mobile {
-      margin:30px auto;
-      
+      flex-flow: column;
+      justify-content: center;
+
     }
+   
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       
       @media @mobile {
-        width:100%;
+        width:90%;
         margin:30px auto;
         
       }

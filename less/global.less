@@ -18,9 +18,13 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 4rem;
   margin-right: 80px;
-    &.center{
-      display:none;
-    }
+ 
+  @media @mobile {
+    align-self: center;
+    text-align: center;
+    margin-right: 0;
+
+  }
 }
 
 h2 {
@@ -51,11 +55,12 @@ img {
 }
 
 .btn {
-    .button(10px 10px, 10px);
+    .button(5% 2%, 10px);
 
     &:hover { 
         background-color: darken(teal, 5%)
       }
+
   }
 
 
