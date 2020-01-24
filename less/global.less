@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
 }
@@ -16,6 +17,14 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4rem;
+  margin-right: 80px;
+ 
+  @media @mobile {
+    align-self: center;
+    text-align: center;
+    margin-right: 0;
+
+  }
 }
 
 h2 {
@@ -44,3 +53,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+
+.btn {
+    .button(5% 2%, 10px);
+
+    &:hover { 
+        background-color: darken(teal, 5%)
+      }
+
+  }
+
+
+  
+
+
+  
